@@ -5,7 +5,7 @@ resource "docker_image" "nginx" {
 }
 
 resource "docker_container" "nginx" {
-  image = docker_image.nginx.name   # <-- change here
+  image = docker_image.nginx.name   # <-- corrected
   name  = "tutorial"
   ports {
     internal = 80
